@@ -1,6 +1,6 @@
 # Privacy Policy — Pathfolio
 
-**Last updated:** October 21, 2026
+**Last updated:** November 3, 2026
 
 Kenny Lee ("we", "us") operates the mobile application **Pathfolio**. This page explains how we handle information when you use our app.
 
@@ -26,7 +26,7 @@ When you tap **Back up**, we upload visited cell hashes, country codes, and firs
 
 ### Pins from shared posts (on your device)
 
-If you share an Instagram post or Reel (or another link) into Pathfolio, the app reads the caption or link preview on your phone to guess a place, then searches **OpenStreetMap Nominatim**. Pins and source links stay in local storage until you remove them. Place search sends only the place name you search for, not your GPS trail.
+If you share an Instagram post or Reel (or another link) into Pathfolio, the app reads the caption or link preview on your phone to guess a place, then searches **OpenStreetMap Nominatim**. Pins and source links stay in local storage until you remove them. Place search sends only the place name you search for, not your GPS trail. If those rules find no place, the app sends the post's caption text (not the image, your location or your account details) to our server, which asks **Anthropic's Claude** to suggest place names. We keep only a daily request count per account (or a one-way hash of the network address for guests) to limit use; the caption is not stored.
 
 ### Device, ads, and purchases
 
@@ -63,6 +63,7 @@ We do **not** sell your personal data. We do not use your trail to show ads.
 | Apple (App Store, Sign in with Apple when required) | iOS purchases and sign-in |
 | RevenueCat | Purchase entitlement |
 | OpenStreetMap / tile provider / Nominatim | Map tiles and optional place search |
+| Anthropic (Claude) | Suggests a place from a shared post's caption when the app's own rules cannot |
 
 Each provider processes data under their own privacy policies.
 
@@ -90,13 +91,13 @@ We may update this policy from time to time. The "Last updated" date at the top 
 
 ## 隱私權政策 — Pathfolio（繁體中文摘要）
 
-**最後更新：** 2026 年 10 月 21 日
+**最後更新：** 2026 年 11 月 3 日
 
 Pathfolio 是旅行日記與地圖 App。GPS 會在手機上把你走過的街道畫成迷霧地圖。**探索紀錄預設只存在這支手機。** 只有你用 Google 登入並點「立即備份」時，才會上傳到雲端（Supabase）。免費使用者可選擇看獎勵廣告，預覽鎖定國家 24 小時。國家解鎖與 Premium 透過 Google Play / App Store 與 RevenueCat 處理。
 
 - **精確位置：** 點「開始探索」後（含背景定位與持續通知）以約 40×20 公尺的格子記錄足跡。模擬定位會被忽略。
 - **備份（選用）：** Google 登入取得 email 與使用者 ID；備份內容為格子雜湊、國家代碼與首次造訪時間。
-- **貼文釘選：** 分享 Instagram 貼文到 App 後，只在本機讀取說明並向 OpenStreetMap 搜尋地名。
+- **貼文釘選：** 分享 Instagram／Threads 貼文到 App 後，先在本機讀取說明並向 OpenStreetMap 搜尋地名；找不到時，才把貼文文字（不含圖片、位置或帳號資料）經我們的伺服器交給 Anthropic Claude 推測地點。文字不會保存，只記錄每日次數以防濫用。
 - **廣告：** 只有你主動看的獎勵廣告（AdMob）；地圖上沒有橫幅或插頁廣告。
 - **刪除帳號：** 設定 → 刪除帳號與雲端資料。雲端備份會刪除，手機上的地圖會保留。
 - **我們不出售個人資料，也不用足跡來投放廣告。**

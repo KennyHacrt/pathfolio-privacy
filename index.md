@@ -1,12 +1,12 @@
 # Privacy Policy — Pathfolio
 
-**Last updated:** November 3, 2026
+**Last updated:** November 4, 2026
 
 Kenny Lee ("we", "us") operates the mobile application **Pathfolio**. This page explains how we handle information when you use our app.
 
 ## Summary
 
-Pathfolio is a travel diary and map. GPS paints the streets you walk as a fog-of-war trail on your phone. **Exploration is recorded on-device by default.** You upload a backup to our cloud (Supabase) only if you sign in with Google and tap **Back up**. Free users may watch an optional rewarded ad to peek at a locked country for 24 hours. Optional in-app purchases (per-country unlocks and Premium) go through Google Play or the App Store and RevenueCat.
+Pathfolio is a travel diary and map. GPS paints the streets you walk as a fog-of-war trail on your phone. **Exploration is recorded on-device by default.** You upload a backup to our cloud (Supabase) only if you sign in with Google and tap **Back up**, or turn on **Back up automatically** (off by default), which uploads whenever you leave the app. Free users may watch an optional rewarded ad to peek at a locked country for 24 hours. Optional in-app purchases (per-country unlocks and Premium) go through Google Play or the App Store and RevenueCat.
 
 ## Information We Collect
 
@@ -14,7 +14,7 @@ Pathfolio is a travel diary and map. GPS paints the streets you walk as a fog-of
 
 When you tap **Start exploring**, Pathfolio uses GPS (including **background location** while exploring, with a persistent notification) to record which ~40×20 m street cells you visited. Those cells are stored in a local database on your phone as geohash codes plus a country code. The map uses this to lift fog and show progress.
 
-Location is **not** sent to our servers unless you later choose **Back up**. Fake / mock GPS fixes are ignored. A VPN does not change GPS.
+Location is **not** sent to our servers unless you choose **Back up** or turn on **Back up automatically**. Fake / mock GPS fixes are ignored. A VPN does not change GPS.
 
 You can stop exploring at any time. Uninstalling the app, or clearing app data, removes the local trail.
 
@@ -22,7 +22,7 @@ You can stop exploring at any time. Uninstalling the app, or clearing app data, 
 
 If you sign in with **Google**, we receive your **email address** and a unique user identifier. We use this only to authenticate you.
 
-When you tap **Back up**, we upload visited cell hashes, country codes, and first-seen timestamps to **Supabase** so you can restore them. We do not receive photos from this backup in the current version.
+When you tap **Back up** (or automatically, if you turned that on), we upload visited cell hashes, country codes, and first-seen timestamps to **Supabase** so you can restore them. We do not receive photos from this backup in the current version.
 
 ### Pins from shared posts (on your device)
 
@@ -91,9 +91,9 @@ We may update this policy from time to time. The "Last updated" date at the top 
 
 ## 隱私權政策 — Pathfolio（繁體中文摘要）
 
-**最後更新：** 2026 年 11 月 3 日
+**最後更新：** 2026 年 11 月 4 日
 
-Pathfolio 是旅行日記與地圖 App。GPS 會在手機上把你走過的街道畫成迷霧地圖。**探索紀錄預設只存在這支手機。** 只有你用 Google 登入並點「立即備份」時，才會上傳到雲端（Supabase）。免費使用者可選擇看獎勵廣告，預覽鎖定國家 24 小時。國家解鎖與 Premium 透過 Google Play / App Store 與 RevenueCat 處理。
+Pathfolio 是旅行日記與地圖 App。GPS 會在手機上把你走過的街道畫成迷霧地圖。**探索紀錄預設只存在這支手機。** 只有你用 Google 登入並點「立即備份」，或開啟「自動備份」（預設關閉，離開 App 時上傳）時，才會上傳到雲端（Supabase）。免費使用者可選擇看獎勵廣告，預覽鎖定國家 24 小時。國家解鎖與 Premium 透過 Google Play / App Store 與 RevenueCat 處理。
 
 - **精確位置：** 點「開始探索」後（含背景定位與持續通知）以約 40×20 公尺的格子記錄足跡。模擬定位會被忽略。
 - **備份（選用）：** Google 登入取得 email 與使用者 ID；備份內容為格子雜湊、國家代碼與首次造訪時間。

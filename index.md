@@ -26,7 +26,7 @@ When you tap **Back up** (or automatically, if you turned that on), we upload vi
 
 ### Pins from shared posts (on your device)
 
-If you share an Instagram post or Reel (or another link) into Pathfolio, the app reads the caption or link preview on your phone to guess a place, then searches **OpenStreetMap Nominatim**. Pins and source links stay in local storage until you remove them. Place search sends only the place name you search for, not your GPS trail. If those rules find no place, the app sends the post's caption text (not the image, your location or your account details) to our server, which asks **DeepSeek** (servers in China) to suggest place names. We keep only a daily request count per account (or a one-way hash of the network address for guests) to limit use; the caption is not stored.
+If you share an Instagram post or Reel (or another link) into Pathfolio, the app reads the caption or link preview on your phone to guess a place, then searches **OpenStreetMap Nominatim**. Pins and source links stay in local storage until you remove them. Place search sends only the place name you search for, not your GPS trail. To suggest place names, the app sends the post's caption text and its public cover image (not your location or your account details) to our server, which asks **DeepSeek** (servers in China). A place recognised from the image is shown as a suggestion for you to confirm. We keep only a daily request count per account (or a one-way hash of the network address for guests) to limit use; the caption and image are not stored on our server.
 
 ### Device, ads, and purchases
 
@@ -63,7 +63,7 @@ We do **not** sell your personal data. We do not use your trail to show ads.
 | Apple (App Store, Sign in with Apple when required) | iOS purchases and sign-in |
 | RevenueCat | Purchase entitlement |
 | OpenStreetMap / tile provider / Nominatim | Map tiles and optional place search |
-| DeepSeek | Suggests a place from a shared post's caption when the app's own rules cannot |
+| DeepSeek | Suggests a place from a shared post's caption and cover image |
 
 Each provider processes data under their own privacy policies.
 
@@ -97,7 +97,7 @@ Pathfolio 是旅行日記與地圖 App。GPS 會在手機上把你走過的街�
 
 - **精確位置：** 點「開始探索」後（含背景定位與持續通知）以約 40×20 公尺的格子記錄足跡。模擬定位會被忽略。
 - **備份（選用）：** Google 登入取得 email 與使用者 ID；備份內容為格子雜湊、國家代碼與首次造訪時間。
-- **貼文釘選：** 分享 Instagram／Threads 貼文到 App 後，先在本機讀取說明並向 OpenStreetMap 搜尋地名；找不到時，才把貼文文字（不含圖片、位置或帳號資料）經我們的伺服器交給 DeepSeek（伺服器位於中國）推測地點。文字不會保存，只記錄每日次數以防濫用。
+- **貼文釘選：** 分享 Instagram／Threads 貼文到 App 後，App 會把貼文文字和公開封面圖片（不含你的位置或帳號資料）經我們的伺服器交給 DeepSeek（伺服器位於中國）推測地點，再向 OpenStreetMap 搜尋；從圖片認出的地點只作建議，由你確認。文字和圖片不會保存在伺服器，只記錄每日次數以防濫用。
 - **廣告：** 只有你主動看的獎勵廣告（AdMob）；地圖上沒有橫幅或插頁廣告。
 - **刪除帳號：** 設定 → 刪除帳號與雲端資料。雲端備份會刪除，手機上的地圖會保留。
 - **我們不出售個人資料，也不用足跡來投放廣告。**

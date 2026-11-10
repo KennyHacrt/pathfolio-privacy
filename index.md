@@ -1,6 +1,6 @@
 # Privacy Policy — Pathfolio
 
-**Last updated:** November 9, 2026
+**Last updated:** November 11, 2026
 
 Kenny Lee ("we", "us") operates the mobile application **Pathfolio**. This page explains how we handle information when you use our app.
 
@@ -34,6 +34,8 @@ Nothing is shared automatically. When you share a place, its name, coordinates, 
 - **Full route** also uploads the time-ordered GPS track for those dates, so friends can replay the order you walked.
 
 The GPS track is otherwise kept on your phone and is never part of a backup. For each shared place you can also pick photos to show. None are shown by default, and only the photos you pick are uploaded. They are readable only by you and your accepted friends. You can delete a shared route, remove a photo or remove a friend at any time. Deleting your account deletes all of this.
+
+You can also **send** a place or a route to chosen friends. Only the friends you pick can see it, and you can only send to accepted friends. A sent place carries its name, coordinates, category, Instagram/Threads post links and its cover photo; your note and other photos are not sent. A sent route is uploaded only when you send it and does not appear on your profile. These shares hold no free text or other links. We keep each share, who sent it to whom, when, and when it was read, so the receiver can see it later. You can unsend a share at any time. Deleting your account deletes the shares and cover photos you sent.
 
 ### Pins from shared posts (on your device)
 
@@ -70,7 +72,7 @@ We do **not** sell your personal data. We do not use your trail to show ads.
 
 | Provider | Purpose |
 |----------|---------|
-| Supabase | Optional authentication, backup of visited cells, and the profile, places, routes and photos you choose to share (row-level security limits each to you and, for shared items, your accepted friends) |
+| Supabase | Optional authentication, backup of visited cells, and the profile, places, routes, photos and sent shares you choose to share (row-level security limits each to you and, for shared items, your accepted friends or the friends you send them to) |
 | Google (Sign-In, Play, AdMob) | Optional sign-in, purchases, rewarded ads |
 | Apple (App Store, Sign in with Apple when required) | iOS purchases and sign-in |
 | RevenueCat | Purchase entitlement |
@@ -83,7 +85,7 @@ Each provider processes data under their own privacy policies.
 
 - **On the phone:** trail, pins and badges stay until you clear app data or uninstall.
 - **In the cloud:** optional backups stay while your account is active.
-- **Delete account:** Settings → Delete account & cloud data. This removes your cloud backup, shared places, routes and photos, and account. The map on this phone is kept. You can also email us (see Contact).
+- **Delete account:** Settings → Delete account & cloud data. This removes your cloud backup, shared places, routes, photos, sent shares and their cover photos, and account. The map on this phone is kept. You can also email us (see Contact).
 
 Purchase records may be kept by Google Play, the App Store and RevenueCat as required for billing. Encrypted infrastructure backups at Supabase expire within about 30 days.
 
@@ -103,7 +105,7 @@ We may update this policy from time to time. The "Last updated" date at the top 
 
 ## 隱私權政策 — Pathfolio（繁體中文摘要）
 
-**最後更新：** 2026 年 11 月 9 日
+**最後更新：** 2026 年 11 月 11 日
 
 Pathfolio 是旅行日記與地圖 App。GPS 會在手機上把你走過的街道畫成迷霧地圖。**探索紀錄預設只存在這支手機。** 只有你用 Google 登入並點「立即備份」，或開啟「自動備份」（預設關閉，離開 App 時上傳）時，才會上傳到雲端（Supabase）。免費使用者可選擇看獎勵廣告，預覽鎖定國家 24 小時。國家解鎖與 Premium 透過 Google Play / App Store 與 RevenueCat 處理。
 
@@ -111,8 +113,9 @@ Pathfolio 是旅行日記與地圖 App。GPS 會在手機上把你走過的街�
 - **備份（選用）：** Google 登入取得 email 與使用者 ID；備份內容為格子雜湊、國家代碼與首次造訪時間。
 - **貼文釘選：** 分享 Instagram／Threads 貼文、截圖或相片到 App 後，App 會把貼文文字、公開封面圖片和你加入作線索的截圖／相片（不含你的位置或帳號資料）經我們的伺服器交給 DeepSeek（伺服器位於中國）推測地點，再向 OpenStreetMap 搜尋；從圖片認出的地點只作建議，由你確認。文字和圖片不會保存在伺服器，只記錄每日次數以防濫用。
 - **朋友（選用，需登入）：** 朋友可看到你的顯示名稱、簡介和好友代碼；持有你完整好友代碼的人可搜尋到你的顯示名稱以送出邀請。只有你主動分享的內容才會上傳：地點（名稱、座標、備註、來源連結）；路線（你選擇日期，「只顯示走過的街區」上傳街區格子，「完整路線」另外上傳該段日期的有序 GPS 軌跡）；每個地點由你逐張挑選的相片（預設不分享，僅你和已加入的朋友可看）。你可隨時刪除，刪除帳號時全部移除。
+- **傳送給朋友（選用）：** 你可把地點或路線傳給選定的朋友，只有收件人看得到，而且只能傳給已加入的朋友。傳送的地點包括名稱、座標、類別、Instagram／Threads 貼文連結和封面相；你的備註和其他相片不會傳出。路線在傳送時才上傳，不會出現在你的個人檔案。分享中沒有自由文字或其他連結。我們保存每則分享、寄件人和收件人、時間及已讀時間。你可隨時收回，刪除帳號時你傳出的分享和封面相會一併刪除。
 - **廣告：** 只有你主動看的獎勵廣告（AdMob）；地圖上沒有橫幅或插頁廣告。
-- **刪除帳號：** 設定 → 刪除帳號與雲端資料。雲端備份及分享的地點、路線和相片會刪除，手機上的地圖會保留。
+- **刪除帳號：** 設定 → 刪除帳號與雲端資料。雲端備份及分享的地點、路線、相片和傳出的分享會刪除，手機上的地圖會保留。
 - **我們不出售個人資料，也不用足跡來投放廣告。**
 
 如有疑問，請來信：**[lee.mh.kenny@gmail.com](mailto:lee.mh.kenny@gmail.com)**

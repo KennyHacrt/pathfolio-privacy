@@ -34,8 +34,8 @@ on your phone to propose a possible flight for your confirmation. This does not
 enable a new always-running flight tracking service. Suggestions do not become
 confirmed flights automatically.
 
-On iOS, boarding-pass or booking images selected for flight recognition are read
-locally with Apple Vision. They are not sent to our server or DeepSeek. Temporary
+Boarding-pass or booking images selected for flight recognition are read locally
+with Apple Vision on iOS and bundled Google ML Kit text recognition on Android. They are not sent to our server or DeepSeek. Temporary
 copies received through the flight share flow are deleted after processing; your
 original Photos images are not deleted. Flight JSON/Google Timeline files are read
 locally only when you select them. Flight data is not included in cloud exploration
@@ -130,7 +130,7 @@ We may update this policy from time to time. The "Last updated" date at the top 
 Pathfolio 是旅行日記與地圖 App。GPS 會在手機上把你走過的街道畫成迷霧地圖。**探索紀錄預設只存在這支手機。** 只有你用 Google 登入並點「立即備份」，或開啟「自動備份」（預設關閉，離開 App 時上傳）時，才會上傳到雲端（Supabase）。免費使用者可選擇看獎勵廣告，預覽鎖定國家 24 小時。國家解鎖與 Premium 透過 Google Play / App Store 與 RevenueCat 處理。
 
 - **精確位置：** 點「開始探索」後（含背景定位與持續通知）以約 40×20 公尺的格子記錄足跡。模擬定位會被忽略。
-- **航班（選用）：** 航班的機場、日期和航班編號只存在手機。位置建議預設關閉；開啟後會比較取得的位置，包括未開啟探索時重新進入 App 的前景定位，並保留上一筆位置來建議可能的航班，由你確認。這不會啟動另一個持續運作的飛行追蹤服務。iOS 的登機證／訂票圖片以 Apple Vision 在手機辨識，不傳給伺服器或 DeepSeek；系統分享流程的暫存圖片在處理後刪除，原本的相簿圖片保留。選取的航班 JSON／Google Timeline 檔案也只在手機處理。航班不包含在雲端足跡備份，你可匯出 JSON 備份或主動分享航線圖片；接收 App 的政策適用。關閉航班位置建議會清除上一筆航班定位，既有航班則保留至你刪除。
+- **航班（選用）：** 航班的機場、日期和航班編號只存在手機。位置建議預設關閉；開啟後會比較取得的位置，包括未開啟探索時重新進入 App 的前景定位，並保留上一筆位置來建議可能的航班，由你確認。這不會啟動另一個持續運作的飛行追蹤服務。登機證／訂票圖片在手機辨識：iOS 使用 Apple Vision，Android 使用內建 Google ML Kit 文字辨識，不傳給伺服器或 DeepSeek；系統分享流程的暫存圖片在處理後刪除，原本的相簿圖片保留。選取的航班 JSON／Google Timeline 檔案也只在手機處理。航班不包含在雲端足跡備份，你可匯出 JSON 備份或主動分享航線圖片；接收 App 的政策適用。關閉航班位置建議會清除上一筆航班定位，既有航班則保留至你刪除。
 - **備份（選用）：** Google 登入取得 email 與使用者 ID；備份內容為格子雜湊、國家代碼與首次造訪時間。
 - **貼文釘選：** 分享 Instagram／Threads 貼文、截圖或相片到 App 後，App 會把貼文文字、公開封面圖片和你加入作線索的截圖／相片（不含你的位置或帳號資料）經我們的伺服器交給 DeepSeek（伺服器位於中國）推測地點，再向 OpenStreetMap 搜尋；從圖片認出的地點只作建議，由你確認。文字和圖片不會保存在伺服器，只記錄每日次數以防濫用。
 - **朋友（選用，需登入）：** 朋友可看到你的顯示名稱、簡介和好友代碼；持有你完整好友代碼的人可搜尋到你的顯示名稱以送出邀請。只有你主動分享的內容才會上傳：地點（名稱、座標、備註、來源連結）；路線（你選擇日期，「只顯示走過的街區」上傳街區格子，「完整路線」另外上傳該段日期的有序 GPS 軌跡）；每個地點由你逐張挑選的相片（預設不分享，僅你和已加入的朋友可看）。你可隨時刪除，刪除帳號時全部移除。
